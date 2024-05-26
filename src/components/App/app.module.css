@@ -296,6 +296,10 @@
 		margin: 0 auto;
 	}
 
+	.logo_title {
+		font-size: 1em;
+	}
+
 	.app_ha {
 		display: block;
 		text-align: center;
