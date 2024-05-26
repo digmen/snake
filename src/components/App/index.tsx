@@ -40,11 +40,16 @@ function App() {
 			</header>
 			{isMenuOpen && (
 				<div className={styles.burger_menu}>
-					<div className={styles.changemode}>
-						<button onClick={() => dispatch(toggleGameMode())}>
-							Toggle Gamemode
-						</button>
-						<div>Current: {showGameMode(mode)}</div>
+					<div className={styles.burger_menu_open}>
+						<div onClick={toggleMenu}>
+							<img className={styles.burger_close_btn} src='/close_btn.svg' alt='close modal btn' />
+						</div>
+						<div className={styles.changemode}>
+							<button onClick={() => dispatch(toggleGameMode())}>
+								Toggle Gamemode
+							</button>
+							<div>Current: {showGameMode(mode)}</div>
+						</div>
 					</div>
 				</div>
 			)}
