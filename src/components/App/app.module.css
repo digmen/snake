@@ -139,6 +139,8 @@
 	background-color: transparent;
 	border-radius: 0;
 	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 @media (max-width: 2560px) {
@@ -305,17 +307,21 @@
 	}
 
 	.number_score {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	.balance {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	.app_img_coin {
-		width: 10px;
-		height: 10px;
+		width: 15px;
+		height: 15px;
 		display: block;
+	}
+
+	.app {
+		padding-top: 5px;
 	}
 
 	.app_ha {
