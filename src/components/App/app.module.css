@@ -300,17 +300,21 @@
 		font-size: 5em;
 	}
 
+	.score_point .number_score {
+		font-size: 0.5em;
+	}
+
 	.number_score {
-		font-size: 5em;
+		font-size: 1em;
 	}
 
 	.balance {
-		font-size: 5em;
+		font-size: 1em;
 	}
 
 	.app_img_coin {
-		width: 20px;
-		height: 20px;
+		width: 10px;
+		height: 10px;
 		display: block;
 	}
 
