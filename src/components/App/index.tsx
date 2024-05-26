@@ -60,7 +60,7 @@ function App() {
 							<span className={styles.number_score}>{score}</span>
 							<img
 								className={styles.app_img_coin}
-								src='../../../public/coin-icon.svg'
+								src='/coin-icon.svg'
 								alt='score'
 							/>
 						</div>
