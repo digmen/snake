@@ -79,7 +79,7 @@ body {
 
 @media (max-width: 431px) {
 	.controls {
-		margin-top: 110px;
+		margin-top: 90px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
