@@ -135,7 +135,36 @@
 	height: 40px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2560px) {
+	.main {
+		width: 880px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 1em;
+	}
+
+	.score {
+		padding: 1em 0 0 0;
+	}
+}
+
+@media (max-width: 1600px) {
 	.main {
 		width: 500px;
 		margin: 0 auto;
