@@ -23,21 +23,46 @@ function App() {
 	}
 
 	return (
-		<div className={styles.main}>
-			<header className={styles.app_header}>
-				<div>
-					<button onClick={toggleMenu} className={styles.menu_button}>
-						<img
-							className={styles.app_img_burger}
-							src='/menu.svg'
-							alt='menu'
-						/>
-					</button>
+		<>
+			<div className={styles.main}>
+				<header className={styles.app_header}>
+					<div>
+						<button onClick={toggleMenu} className={styles.menu_button}>
+							<img
+								className={styles.app_img_burger}
+								src='/menu.svg'
+								alt='menu'
+							/>
+						</button>
+					</div>
+					<div className={styles.score_point}>
+						<span className={styles.number_score}>{highScore}+</span>
+					</div>
+				</header>
+
+				<div className={styles.app_lol}>
+					<div className={styles.app_ha}>
+						<span className={styles.logo_title}>SNAKE</span>
+					</div>
+					<Grid grid={grid} />
+					<div className={styles.app}>
+						<div className={styles.score}>
+							<span className={styles.balance}>balance</span>
+							<div className={styles.coin_block}>
+								<span className={styles.number_score}>{score}</span>
+								<img
+									className={styles.app_img_coin}
+									src='/coin-icon.svg'
+									alt='score'
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div className={styles.score_point}>
-					<span className={styles.number_score}>{highScore}+</span>
+				<div className={styles.control}>
+					<Controller />
 				</div>
-			</header>
+			</div>
 			{isMenuOpen && (
 				<div className={styles.burger_menu}>
 					<div className={styles.burger_menu_open}>
@@ -53,29 +78,7 @@ function App() {
 					</div>
 				</div>
 			)}
-			<div className={styles.app_lol}>
-				<div className={styles.app_ha}>
-					<span className={styles.logo_title}>SNAKE</span>
-				</div>
-				<Grid grid={grid} />
-				<div className={styles.app}>
-					<div className={styles.score}>
-						<span className={styles.balance}>balance</span>
-						<div className={styles.coin_block}>
-							<span className={styles.number_score}>{score}</span>
-							<img
-								className={styles.app_img_coin}
-								src='/coin-icon.svg'
-								alt='score'
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className={styles.control}>
-				<Controller />
-			</div>
-		</div>
+		</>
 	)
 }
 

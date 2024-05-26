@@ -101,7 +101,6 @@
 	border-radius: 0.8em;
 	margin: 0.5em;
 	outline: none;
-	height: 50px;
 }
 
 .changemode button:hover {
@@ -348,5 +347,33 @@
 
 	.control {
 		display: block;
+	}
+
+	.changemode {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.changemode button {
+		padding: 1em 2em;
+		font-size: 3em;
+		border: 0.1em solid white;
+		color: white;
+		background-color: #4444;
+		border-radius: 0.8em;
+		margin: 0.5em;
+		outline: none;
+	}
+
+	.changemode button:hover {
+		background-color: #13131354;
+	}
+
+	.changemode div {
+		font-size: 4em;
+		color: white;
 	}
 }
