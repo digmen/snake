@@ -1,0 +1,32 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.gridbox {
+	border: 2em solid rgba(255, 244, 216, 1);
+	border-radius: 0.5em;
+}
+.gridbox:focus {
+	outline: none;
+}
+.row {
+	display: flex;
+	height: 5.4em;
+}
+
+.cell {
+	width: 5.4em;
+	height: 5.4em;
+	background-color: rgba(14, 35, 56, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row:nth-child(even) .cell:nth-child(odd) {
+	background-color: rgba(14, 35, 56, 1);
+}
+.row:nth-child(odd) .cell:nth-child(even) {
+	background-color: rgba(14, 35, 56, 1);
+}
