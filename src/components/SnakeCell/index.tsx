@@ -31,14 +31,13 @@ function SnakeCell({ snake, row, col }: TSnakeCellProps) {
     }
   }
 
-  {/* <img src={snakeHeadImg} alt='Snake Head' /> */ }
   return (
     <div className={styles.snake}>
       <div
         className={getClassName(snake)}
         style={isSnakeHead(snake) ? { transform: getHeadRotation() } : {}}
       >
-        {isSnakeHead(snake) ? "" : null}
+        {isSnakeHead(snake) ? <img src={snakeHeadImg} alt='Snake Head' /> : null}
       </div>
     </div>
   )
