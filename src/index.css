@@ -7,6 +7,10 @@ body {
 	width: 100%;
 }
 
+body {
+	background-color: rgba(14, 35, 56, 1);
+}
+
 #root {
 	height: 100%;
 	width: 100%;
@@ -41,19 +45,29 @@ body {
 }
 
 .controls button {
-	background: none; /* Убираем фон */
-	color: inherit; /* Цвет текста наследуется от родительского элемента */
-	border: none; /* Убираем рамку */
-	padding: 0; /* Убираем внутренние отступы */
-	margin: 0; /* Убираем внешние отступы */
-	font: inherit; /* Наследуем шрифт от родительского элемента */
-	cursor: pointer; /* Сохраняем курсор в виде указателя */
-	outline: inherit; /* Управление контуром при фокусировке */
+	background: none;
+	/* Убираем фон */
+	color: inherit;
+	/* Цвет текста наследуется от родительского элемента */
+	border: none;
+	/* Убираем рамку */
+	padding: 0;
+	/* Убираем внутренние отступы */
+	margin: 0;
+	/* Убираем внешние отступы */
+	font: inherit;
+	/* Наследуем шрифт от родительского элемента */
+	cursor: pointer;
+	/* Сохраняем курсор в виде указателя */
+	outline: inherit;
+	/* Управление контуром при фокусировке */
 }
 
 .controls button {
 	margin-top: -3px;
-} /* Top */
+}
+
+/* Top */
 
 .controls div button:nth-child(1) {
 	margin-right: -1px;
