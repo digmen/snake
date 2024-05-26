@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 const Controller = () => {
 	const [isActive, setIsActive] = useState(false)
+	const [audio] = useState(new Audio('/snakemusic.mp3'))
+	const [volume, setVolume] = useState(0.5)
 
 	const simulateKeyPress = (key: string) => {
 		if (!isActive) return
@@ -10,8 +13,30 @@ const Controller = () => {
 	}
 
 	const handleStartGame = () => {
-		setIsActive(true)
+		setIsActive(!isActive)
 	}
+
+	const handleVolumeChange = (event) => {
+		const newVolume = event.target.value
+		setVolume(newVolume)
+		audio.volume = newVolume
+	}
+
+	// useEffect to handle playing and pausing the music
+	useEffect(() => {
+		if (isActive) {
+			audio.play().catch(error => {
+				console.error('Error playing audio:', error)
+			})
+		} else {
+			audio.pause()
+		}
+	}, [isActive, audio])
+
+	// useEffect to handle volume changes
+	useEffect(() => {
+		audio.volume = volume
+	}, [volume, audio])
 
 	return (
 		<div className='controls'>
@@ -32,6 +57,19 @@ const Controller = () => {
 			<button onClick={() => simulateKeyPress('KeyS')} disabled={!isActive}>
 				<img className='icon-button' src='/arrow-bottom.svg' alt='Bottom' />
 			</button>
+			{/* <div className='volume-control'>
+				<label htmlFor='volume'>Volume:</label>
+				<input
+					type='range'
+					id='volume'
+					name='volume'
+					min='0'
+					max='1'
+					step='0.01'
+					value={volume}
+					onChange={handleVolumeChange}
+				/>
+			</div> */}
 		</div>
 	)
 }

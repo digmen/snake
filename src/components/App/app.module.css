@@ -1,5 +1,5 @@
 .app_header {
-	padding: 1em;
+	/* padding: 1em 1em 0em 1em; */
 	display: flex;
 	justify-content: space-between;
 	color: white;
@@ -113,7 +113,6 @@
 	color: white;
 }
 
-.control {}
 
 .burger_menu {
 	position: absolute;
@@ -134,4 +133,157 @@
 .burger_close_btn {
 	width: 40px;
 	height: 40px;
+}
+
+@media (max-width: 1500px) {
+	.main {
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 1em;
+	}
+
+	.score {
+		padding: 1em 0 0 0;
+	}
+}
+
+@media (max-width: 1440px) {
+	.main {
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 0.5em;
+	}
+
+	.score {
+		padding: 0.5em 0 0 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main {
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 0.1em;
+	}
+
+	.score {
+		padding: 0.5em 0 0 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.main {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 1em;
+	}
+
+	.score {
+		padding: 1em 0 0 0;
+	}
+
+	.control {
+		display: block;
+	}
+}
+
+@media (max-width: 431px) {
+	.main {
+		width: 360px;
+		margin: 0 auto;
+	}
+
+	.app_ha {
+		display: block;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.app_lol {
+		display: block;
+	}
+
+	.control {
+		display: none;
+	}
+
+	.app_header {
+		padding-top: 0;
+	}
+
+	.score {
+		padding-top: 0.2em;
+	}
+
+	.control {
+		display: block;
+	}
 }

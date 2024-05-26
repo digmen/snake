@@ -23,7 +23,7 @@ function App() {
 	}
 
 	return (
-		<>
+		<div className={styles.main}>
 			<header className={styles.app_header}>
 				<div>
 					<button onClick={toggleMenu} className={styles.menu_button}>
@@ -75,7 +75,7 @@ function App() {
 			<div className={styles.control}>
 				<Controller />
 			</div>
-		</>
+		</div>
 	)
 }
 

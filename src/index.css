@@ -76,3 +76,21 @@ body {
 .controls div button:nth-child(3) {
 	margin-left: -1px;
 }
+
+@media (max-width: 431px) {
+	.controls {
+		margin-top: 110px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 380px) {
+	.controls {
+		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

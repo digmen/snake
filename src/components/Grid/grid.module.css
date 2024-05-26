@@ -3,13 +3,16 @@
 	display: flex;
 	justify-content: center;
 }
+
 .gridbox {
 	border: 2em solid rgba(255, 244, 216, 1);
 	border-radius: 0.5em;
 }
+
 .gridbox:focus {
 	outline: none;
 }
+
 .row {
 	display: flex;
 	height: 5.4em;
@@ -27,6 +30,55 @@
 .row:nth-child(even) .cell:nth-child(odd) {
 	background-color: rgba(14, 35, 56, 1);
 }
+
 .row:nth-child(odd) .cell:nth-child(even) {
 	background-color: rgba(14, 35, 56, 1);
+}
+
+@media (max-width: 1500px) {
+	.row {
+		display: flex;
+		height: 2em;
+	}
+
+	.cell {
+		width: 2em;
+		height: 2em;
+		background-color: rgba(14, 35, 56, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.row {
+		display: flex;
+		height: 3em;
+	}
+
+	.cell {
+		width: 3em;
+		height: 3em;
+		background-color: rgba(14, 35, 56, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 431px) {
+	.row {
+		display: flex;
+		height: 6em;
+	}
+
+	.cell {
+		width: 6em;
+		height: 6em;
+		background-color: rgba(14, 35, 56, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
