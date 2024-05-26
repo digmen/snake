@@ -300,6 +300,20 @@
 		font-size: 5em;
 	}
 
+	.number_score {
+		font-size: 5em;
+	}
+
+	.balance {
+		font-size: 5em;
+	}
+
+	.app_img_coin {
+		width: 20px;
+		height: 20px;
+		display: block;
+	}
+
 	.app_ha {
 		display: block;
 		text-align: center;
