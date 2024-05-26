@@ -3,7 +3,7 @@ import { useState } from 'react'
 const Controller = () => {
 	const [isActive, setIsActive] = useState(false)
 
-	const simulateKeyPress = (key: string) => {
+	const simulateKeyPress = (key: String) => {
 		if (!isActive) return
 		const event = new KeyboardEvent('keydown', { code: key })
 		window.dispatchEvent(event)

@@ -7,6 +7,7 @@ import Controller from '../Control/ControlButtons'
 import Grid from '../Grid'
 import styles from './app.module.css'
 
+
 function App() {
 	const { score, grid, mode } = useAppSelector(state => state.game)
 	const dispatch = useAppDispatch()
@@ -28,8 +29,8 @@ function App() {
 					<button onClick={toggleMenu} className={styles.menu_button}>
 						<img
 							className={styles.app_img_burger}
-							src='../../../public/menu.svg'
-							alt='Menu'
+							src='/menu.svg'
+							alt='menu'
 						/>
 					</button>
 				</div>
