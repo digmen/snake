@@ -70,12 +70,12 @@
 @media (max-width: 431px) {
 	.row {
 		display: flex;
-		height: 6em;
+		height: 5em;
 	}
 
 	.cell {
-		width: 6em;
-		height: 6em;
+		width: 5em;
+		height: 5em;
 		background-color: rgba(14, 35, 56, 1);
 		display: flex;
 		justify-content: center;
