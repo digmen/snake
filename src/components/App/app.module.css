@@ -258,7 +258,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 	.main {
 		width: 600px;
 		margin: 0 auto;
@@ -291,7 +291,7 @@
 	}
 }
 
-@media (max-width: 431px) {
+@media (max-width: 500px) {
 	.main {
 		width: 300px;
 		margin: 0 auto;

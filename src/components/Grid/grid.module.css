@@ -67,7 +67,23 @@
 	}
 }
 
-@media (max-width: 431px) {
+@media (max-width: 770px) {
+	.row {
+		display: flex;
+		height: 5em;
+	}
+
+	.cell {
+		width: 5em;
+		height: 5em;
+		background-color: rgba(14, 35, 56, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
 	.row {
 		display: flex;
 		height: 5em;
